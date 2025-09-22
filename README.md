@@ -3,3 +3,6 @@
 A new Flutter project.
 
 ![Screenshot hello_world](images/01.jpg)
+
+Text Widget
+![Screenshot text widget](images/02.jpg)
