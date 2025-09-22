@@ -6,3 +6,6 @@ A new Flutter project.
 
 Text Widget
 ![Screenshot text widget](images/02.jpg)
+
+Image Widget
+![Screenshot image widget](images/03.jpg)
