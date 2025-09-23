@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'basic_widgets/image_widget.dart';
-import 'basic_widgets/scaffold_widget.dart';
 import 'basic_widgets/dialog_widget.dart';
+import 'basic_widgets/date_picker_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,29 +27,28 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("My Increment App")),
-      body: Center(
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(16.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            MyImageWidget(),
-            SizedBox(height: 20),
-            DialogWidget(),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 16.0),
-              child: TextField(
-                obscureText: false,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Nama',
-                ),
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            const MyImageWidget(),        // logo
+            const SizedBox(height: 20),
+            const DialogWidget(),         // tombol alert
+            const SizedBox(height: 20),
+            const TextField(              // text field
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Nama',
               ),
             ),
+            const SizedBox(height: 20),
+            DatePickerWidget(),           // muncul di bawah TextField
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // contoh tombol tambahan
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text("FAB pressed!")),
           );
