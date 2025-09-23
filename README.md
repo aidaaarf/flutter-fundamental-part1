@@ -9,3 +9,6 @@ Text Widget
 
 Image Widget
 ![Screenshot image widget](images/03.jpg)
+
+Scaffold Widget
+![Screenshot scaffolf widget](images/04.jpg)
