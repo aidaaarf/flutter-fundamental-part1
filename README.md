@@ -11,4 +11,7 @@ Image Widget
 ![Screenshot image widget](images/03.jpg)
 
 Scaffold Widget
-![Screenshot scaffolf widget](images/04.jpg)
+![Screenshot scaffold widget](images/04.jpg)
+
+Dialog Widget
+![Screenshot dialog widget](images/05.jpg)

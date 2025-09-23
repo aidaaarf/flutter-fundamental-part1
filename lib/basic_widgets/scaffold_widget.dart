@@ -24,23 +24,13 @@ class _ScaffoldWidgetState extends State<ScaffoldWidget> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
+        child: Text(
+          'Counter: $_counter',
+          style: Theme.of(context).textTheme.headlineMedium,
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        child: Container(
-          height: 50.0,
-        ),
+        child: Container(height: 50.0),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
