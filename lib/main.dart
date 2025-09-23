@@ -34,6 +34,16 @@ class HomePage extends StatelessWidget {
             MyImageWidget(),
             SizedBox(height: 20),
             DialogWidget(),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16.0),
+              child: TextField(
+                obscureText: false,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Nama',
+                ),
+              ),
+            ),
           ],
         ),
       ),
