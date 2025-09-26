@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Aida Flutter',
       theme: ThemeData(primarySwatch: Colors.red),
       home: const HomePage(),
     );
@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("My Increment App")),
+      appBar: AppBar(title: const Text("Aida's Increment App")),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
         child: Column(

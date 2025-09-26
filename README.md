@@ -21,5 +21,12 @@ TextField
 
 Date Picker
 ![Screenshot date picker widget](images/07.jpg)
+
 Date picker Kalender
 ![Screenshot date_picker widget](images/08.jpg)
+
+Tampilan Final
+![Screenshot tampilan_final](images/09.jpg)
+
+Tampilan pada Mobile
+![SCreenshot tampilan_mobile](images/10.jpg)
