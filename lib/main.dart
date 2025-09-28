@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'basic_widgets/image_widget.dart';
 import 'basic_widgets/dialog_widget.dart';
 import 'basic_widgets/date_picker_widget.dart';
@@ -43,7 +44,13 @@ class HomePage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            DatePickerWidget(),           // muncul di bawah TextField
+            DatePickerWidget(),           // date picker
+            const SizedBox(height: 20),
+
+            // 👇 Tambahin LoadingCupertino di sini
+            const Text("Contoh Button:"),
+            const SizedBox(height: 10),
+            const CupertinoActivityIndicator(),
           ],
         ),
       ),
